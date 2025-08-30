@@ -1,0 +1,49 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #A8C3B0;
+  font-family: Verdana;
+  font-size: 1em;
+}
+
+h1, p {
+  text-align: center;
+  margin: 1em auto;
+}
+
+form {
+  width: 60vw;
+  margin: 0 auto; /*Centers form section*/
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  min-height: 2em;
+}
+
+fieldset {
+  border: 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: unset;
+  min-height: unset;
+}
+
+#endPreferences {
+  text-align: left;
+}
+
+#submit {
+  margin: 1em auto;
+  width: 40%;
+  display: block;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Coding Preferences Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <!-- Title -->
+    <h1 id="title">Coding Preferences Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill this form</p>
+
+    <!-- Form Section -->
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" placeholder="John Smith" required/></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="JohnSmith@email.com" required></label>
+        <label id="number-label">Age <input id="number" type="number" min="8" max="115" placeholder="Age" /></label>
+      </fieldset>
+      <!-- Preference -->
+      <fieldset>
+        <label for="dropdown">What language do you prefer?
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C/C++/C#">C/C++/C#</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <p id="endPreferences">Do you prefer Front-end or Back-end development?</p>
+        <label for="frontend"><input id="frontend" type="radio" name="devPrefer" value="front"/> Front-end</label>
+        <label for="backend"><input id="backend" type="radio" name="devPrefer" value="back"/> Back-end</label>
+      </fieldset>
+
+      <!-- Learn more of -->
+      <fieldset>
+        <legend>What do you want to learn more of?</legend>
+        <label for="cloud"><input id="cloud" type="checkbox" value="cloud"> Cloud Computing</label>
+        <label for="databases"><input id="databases" type="checkbox" value="databases"> Databases</label>
+        <label for="network"><input id="network" type="checkbox" value="network"> Networking</label>
+        <label for="other"><input id="other" type="checkbox" value="other"> Other</label>
+      </fieldset>
+
+      <!-- Additional comments -->
+      <fieldset>
+        <label for="comments">
+          Is there any additional comments you would like to mention? <textarea id="comments" name="comments" rows="3" cols="30"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
